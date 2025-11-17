@@ -19,7 +19,7 @@ class Locators():
     LOGIN_BUTTON=(By.XPATH, '//button[text()="Войти"]')     # Кнопка "Войти" на странице входа
     LOGIN_EMAIL_INPUT=(By.XPATH, "//input[@type='text']")     # Поле ввода логина на странице входа
     LOGIN_PASSWORD_INPUT=(By.XPATH, ".//input[@type='password']")     # Поле ввода пароля на странице входа
-    LOGOUT_BUTTON=(By.XPATH, '//button[text()="Выход"]')     # Кнопка "Выйти" в Личном Кабинете
+    LOGOUT_BUTTON=(By.XPATH, '//button[text()="Выход"]')     # Кнопка "Выход" в Личном Кабинете
 
     ERROR_INCORRECT_PASSWORD=(By.XPATH, '//p[text()="Некорректный пароль"]')     # Сообщение о некорректном пароле
     ERROR_BORDER=(By.CSS_SELECTOR, ".input_status_error")     # Красная рамка вокруг поля ввода пароля

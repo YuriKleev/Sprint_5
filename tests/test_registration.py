@@ -2,8 +2,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 import conftest
-from helper import *
 from locators import Locators
+from helper import *
 from url import profile_page
 
 class TestRegistrationStellarBurgers:

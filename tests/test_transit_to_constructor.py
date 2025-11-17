@@ -5,7 +5,7 @@ import conftest
 from locators import Locators
 from helper import fill_reg_fields
 
-class TestTransitionToProfileStellarBurgers:
+class TestTransitionToConstructorStellarBurgers:
 
     def test_transit_to_constructor_via_button(self,driver,registration_user):
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.LOGIN_BUTTON))
