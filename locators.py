@@ -23,4 +23,7 @@ class Locators():
 
     ERROR_INCORRECT_PASSWORD=(By.XPATH, '//p[text()="Некорректный пароль"]')     # Сообщение о некорректном пароле
     ERROR_BORDER=(By.CSS_SELECTOR, ".input_status_error")     # Красная рамка вокруг поля ввода пароля
-    
+
+    SELECTOR_BUNS=(By.XPATH, '//span[text()="Булки"]/parent::div')     # Раздел с булками в конструкторе
+    SELECTOR_SAUCES=(By.XPATH, '//span[text()="Соусы"]/parent::div')     # Раздел с соусами в конструкторе
+    SELECTOR_FILLINGS=(By.XPATH, '//span[text()="Начинки"]/parent::div')     # Раздел с начинками в конструкторе    
