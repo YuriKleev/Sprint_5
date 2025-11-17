@@ -13,8 +13,7 @@ class TestLoginStellarBurgers:
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.LOGIN_BUTTON_ON_MAIN_PAGE))
         driver.find_element(*Locators.LOGIN_BUTTON_ON_MAIN_PAGE).click()
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.LOGIN_BUTTON))
-        email,password=registration_user[1],registration_user[2]
-        fill_reg_fields (driver,email,password)
+        fill_reg_fields (driver,registration_user[1],registration_user[2])
         driver.find_element(*Locators.LOGIN_BUTTON).click()
         assert WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.PLACE_ORDER_BUTTON))
 
@@ -23,8 +22,7 @@ class TestLoginStellarBurgers:
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.PROFILE_BUTTON))
         driver.find_element(*Locators.PROFILE_BUTTON).click()
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.LOGIN_BUTTON))
-        email,password=registration_user[1],registration_user[2]
-        fill_reg_fields (driver,email,password)
+        fill_reg_fields (driver,registration_user[1],registration_user[2])
         driver.find_element(*Locators.LOGIN_BUTTON).click()
         assert WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.PLACE_ORDER_BUTTON))
 
@@ -33,8 +31,7 @@ class TestLoginStellarBurgers:
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.LOGIN_BUTTON_ON_REG_PAGE))
         driver.find_element(*Locators.LOGIN_BUTTON_ON_REG_PAGE).click()
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.LOGIN_BUTTON))
-        email,password=registration_user[1],registration_user[2]
-        fill_reg_fields (driver,email,password)
+        fill_reg_fields (driver,registration_user[1],registration_user[2])
         driver.find_element(*Locators.LOGIN_BUTTON).click()
         assert WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.PLACE_ORDER_BUTTON))
 
@@ -43,7 +40,6 @@ class TestLoginStellarBurgers:
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.LOGIN_BUTTON_ON_RESTORE_PAGE))
         driver.find_element(*Locators.LOGIN_BUTTON_ON_RESTORE_PAGE).click()
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.LOGIN_BUTTON))
-        email,password=registration_user[1],registration_user[2]
-        fill_reg_fields (driver,email,password)
+        fill_reg_fields (driver,registration_user[1],registration_user[2])
         driver.find_element(*Locators.LOGIN_BUTTON).click()
         assert WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.PLACE_ORDER_BUTTON))

@@ -9,8 +9,7 @@ class TestTransitionToConstructorStellarBurgers:
 
     def test_transit_to_constructor_via_button(self,driver,registration_user):
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.LOGIN_BUTTON))
-        email,password=registration_user[1],registration_user[2]
-        fill_reg_fields (driver,email,password)
+        fill_reg_fields (driver,registration_user[1],registration_user[2])
         driver.find_element(*Locators.LOGIN_BUTTON).click()
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.PROFILE_BUTTON))
         driver.find_element(*Locators.PROFILE_BUTTON).click()
@@ -20,8 +19,7 @@ class TestTransitionToConstructorStellarBurgers:
 
     def test_transit_to_constructor_via_logo(self,driver,registration_user):
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.LOGIN_BUTTON))
-        email,password=registration_user[1],registration_user[2]
-        fill_reg_fields (driver,email,password)
+        fill_reg_fields (driver,registration_user[1],registration_user[2])
         driver.find_element(*Locators.LOGIN_BUTTON).click()
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.PROFILE_BUTTON))
         driver.find_element(*Locators.PROFILE_BUTTON).click()
