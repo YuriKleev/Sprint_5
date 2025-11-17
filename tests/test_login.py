@@ -3,12 +3,8 @@ from selenium.webdriver.support import expected_conditions as EC
 
 import conftest
 from locators import Locators
+from helper import fill_reg_fields
 from url import *
-
-def fill_reg_fields (self,email,password):     # функция для заполнения полей ввода на странице входа
-    self.find_element(*Locators.INPUT_EMAIL).send_keys(email)
-    self.find_element(*Locators.INPUT_PASSWORD).send_keys(password)
-    return self
 
 class TestLoginStellarBurgers:
 
