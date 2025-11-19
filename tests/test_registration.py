@@ -34,4 +34,4 @@ class TestRegistrationStellarBurgers:
         driver.find_element(*Locators.INPUT_PASSWORD).send_keys(password)
         driver.find_element(*Locators.REG_BUTTON_ON_REG_PAGE).click()
         assert WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.ERROR_INCORRECT_PASSWORD))
-        #assert driver.find_element(*Locators.ERROR_BORDER).get_attribute('border')=='#e52b1a'
+        assert 'input_status_error' in driver.find_element(*Locators.PASSWORD_BORDER).get_attribute('class')

@@ -20,7 +20,7 @@ class Locators():
     LOGIN_PASSWORD_INPUT=(By.XPATH, ".//input[@type='password']")     # Поле ввода пароля на странице входа
     LOGOUT_BUTTON=(By.XPATH, '//button[text()="Выход"]')     # Кнопка "Выход" в Личном Кабинете
     ERROR_INCORRECT_PASSWORD=(By.XPATH, '//p[text()="Некорректный пароль"]')     # Сообщение о некорректном пароле
-    ERROR_BORDER=(By.CSS_SELECTOR, ".input_status_error")     # Красная рамка вокруг поля ввода пароля
+    PASSWORD_BORDER=(By.XPATH, '//label[text()="Пароль"]/parent::div')     # Локатор поля ввода пароля - для проверки смены цвета рамки поля
     SELECTOR_BUNS=(By.XPATH, '//span[text()="Булки"]/parent::div')     # Раздел с булками в конструкторе
     SELECTOR_SAUCES=(By.XPATH, '//span[text()="Соусы"]/parent::div')     # Раздел с соусами в конструкторе
     SELECTOR_FILLINGS=(By.XPATH, '//span[text()="Начинки"]/parent::div')     # Раздел с начинками в конструкторе
