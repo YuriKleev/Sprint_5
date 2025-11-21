@@ -13,7 +13,7 @@ from url import main_page
 def driver():
     options = Options()
     options.add_argument("--window-size=1280,720")
-    service = Service ('C:/WebDriver/bin/chromedriver.exe')
+    service = Service ('')
     browser = webdriver.Chrome(service=service, options=options)
     browser.get(main_page)
     yield browser
