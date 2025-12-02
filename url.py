@@ -1,0 +1,5 @@
+main_page='https://stellarburgers.education-services.ru/'
+profile_page=f'{main_page}account/profile'
+registration_page=f'{main_page}register'
+restore_password_page=f'{main_page}forgot-password'
+login_page=f'{main_page}login'
